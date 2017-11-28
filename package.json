@@ -1,0 +1,32 @@
+{
+  "name": "mongo-dump",
+  "version": "1.0.0",
+  "description": "auto mongo backup/mongo-dump",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit2389/mongo-dump.git"
+  },
+  "keywords": [
+    "mongo-dump",
+    "mongo-auto-backup",
+    "mongodump",
+    "mongobackup",
+    "mongoexport",
+    "mongodbdump",
+    "export",
+    "backup"
+  ],
+  "author": "Rohit Shrivastava <rohit.shri2389@gmail.com> (https://github.com/rohit2389)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit2389/mongo-dump/issues"
+  },
+  "homepage": "https://github.com/rohit2389/mongo-dump#readme",
+  "dependencies": {
+    "node-fs": "^0.1.7"
+  }
+}
