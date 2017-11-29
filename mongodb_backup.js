@@ -5,7 +5,7 @@ var child_process = require('child_process');
 var dbOptions =  {
     user: false,
     pass: false,
-    host: 'localhost',
+    host: '<host name>',
     port: 27017,
     database: '<databse name>',
     autoBackup: true, 
@@ -37,7 +37,7 @@ exports.dbAutoBackUp= () => {
             oldBackupPath = dbOptions.autoBackupPath + 'mongodump-' + oldBackupDir; // old backup(after keeping # of days)
         }
 
-        var cmd = 'mongodump --host ' + dbOptions.host + ' --port ' + dbOptions.port + ' --db ' + dbOptions.database + ' --username ' + dbOptions.user + ' --password ' + dbOptions.pass + ' --out ' + newBackupPath; // Command for mongodb dump process
+        var cmd = 'mongodump --host ' + dbOptions.host + ' --port ' + dbOptions.port + ' --db ' + dbOptions.database + ' --out ' + newBackupPath; // Command for mongodb dump process
         child_process.exec(cmd, function (error, stdout, stderr) {
             
             if(error)
