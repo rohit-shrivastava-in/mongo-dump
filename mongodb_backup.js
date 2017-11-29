@@ -7,11 +7,11 @@ var dbOptions =  {
     pass: false,
     host: 'localhost',
     port: 27017,
-    database: 'Interio',
+    database: '<databse name>',
     autoBackup: true, 
     removeOldBackup: true,
     keepLastDaysBackup: 2,
-    autoBackupPath: 'F:/auto-backup/' // i.e. /var/database-backup/
+    autoBackupPath: '<backup-path>' // i.e. /var/database-backup/
 };
 
 /* return date object */
