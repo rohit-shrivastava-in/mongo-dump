@@ -13,7 +13,7 @@
   "keywords": [
     "mongo-dump",
     "mongo-auto-backup",
-    "mongodump",
+    "mongo dump",
     "mongobackup",
     "mongoexport",
     "mongodbdump",
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/rohit2389/mongo-dump#readme",
   "dependencies": {
-    "node-fs": "^0.1.7"
+    "cron": "^1.3.0"
   }
 }
